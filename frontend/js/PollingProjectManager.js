@@ -49,7 +49,7 @@ export class PollingProjectManager {
           url: data.url,
           popupContent: popupContent.join('\n'),
           onClick: async () => {
-            this.popupUtil.open(popupContent.join('\n'));
+            this.popupUtil.open(popupContent);
           }
         }
       );
