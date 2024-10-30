@@ -1,8 +1,9 @@
 export class PopupUtil {
   constructor() {
+    constructor(width = 46)
     this.popup = null;
     this.content = null;
-    this.width = 46; // Match your project widget width
+    this.width = width;
     this.setupPopup();
   }
 
@@ -17,7 +18,6 @@ export class PopupUtil {
     this.popup.appendChild(this.content);
     document.body.appendChild(this.popup);
     
-    // Close on background click or ESC
     this.popup.addEventListener('click', (e) => {
       if (e.target === this.popup) this.close();
     });
@@ -29,7 +29,6 @@ export class PopupUtil {
   formatContent(contentLines) {
     const border = '+' + '-'.repeat(this.width - 2) + '+';
     const formattedLines = contentLines.map(line => {
-      // Center the text and pad with spaces
       const paddingTotal = this.width - 2 - line.length;
       const paddingLeft = Math.floor(paddingTotal / 2);
       const paddingRight = paddingTotal - paddingLeft;

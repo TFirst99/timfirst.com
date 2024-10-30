@@ -5,7 +5,8 @@ export class PollingProjectManager {
   constructor() {
     this.pollingProjectElement = document.getElementById("polling-project-widget");
     this.pollingProjectWidget = new WidgetUtil(this.pollingProjectElement, { width: 46 });
-    this.popupUtil = new PopupUtil();
+    const width = 46;
+    this.popupUtil = new PopupUtil(width);
     this.jsonUrl = "/json/polling-project.json";
     this.popupJsonUrl = "/json/polling-project-popup.json";
   }
