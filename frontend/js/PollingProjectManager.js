@@ -27,14 +27,16 @@ export class PollingProjectManager {
   async updatePollingData() {
     try {
       const response = await fetch(this.jsonUrl);
+      const popupContent = await this.loadPopupContent();
+      
       if (!response.ok) {
         throw new Error("Failed to fetch polling project");
       }
       const data = await response.json();
-      this.updateWidget(data);
+      this.updateWidget(data, popupContent);
     } catch (error) {
       console.error("Error fetching polling project:", error);
-      this.updateWidget(null);
+      this.updateWidget(null, ["Error loading content"]);
     }
   }
 
@@ -43,11 +45,11 @@ export class PollingProjectManager {
       this.pollingProjectWidget.updateWidget(
         ...data.project.map(line => ({ content: line })),
         { 
-          content: 'VIEW ON GITHUB', 
+          content: 'READ MORE', 
           url: data.url,
           popupContent: popupContent.join('\n'),
           onClick: async () => {
-            this.popup.open(popupContent.join('\n'));
+            this.popupUtil.open(popupContent.join('\n'));
           }
         }
       );
