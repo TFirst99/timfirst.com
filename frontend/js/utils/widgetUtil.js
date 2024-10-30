@@ -7,6 +7,7 @@ export class WidgetUtil {
     };
     this.lines = [];
     this.scrollIntervals = [];
+    this.setupEventListeners();
   }
 
   updateWidget(...lines) {
@@ -24,7 +25,7 @@ export class WidgetUtil {
     if (typeof line === 'object' && line !== null) {
       const content = this.formatContent(line.content);
       if (line.url) {
-        return `|<div class="content-wrapper"><span class="link-wrapper">${content.replace(line.content, `<a href="${line.url}" target="_blank" class="widget-link" data-line="${index}">${line.content}</a>`)}</span></div>|`;
+        return `|<div class="content-wrapper"><span class="link-wrapper">${content.replace(line.content, `<a href="#" class="widget-link" data-url="${line.url}" data-line="${index}">${line.content}</a>`)}</span></div>|`;
       }
       return `|<div class="content-wrapper"><span class="scrolling-content" data-line="${index}">${content}</span></div>|`;
     }
@@ -71,5 +72,18 @@ export class WidgetUtil {
   stopAllScrolling() {
     this.scrollIntervals.forEach(clearInterval);
     this.scrollIntervals = [];
+  }
+  
+  setupEventListeners() {
+    this.widgetElement.addEventListener('click', (e) => {
+      if (e.target.classList.contains('widget-link')) {
+        e.preventDefault();
+        const lineIndex = parseInt(e.target.dataset.line);
+        const line = this.lines[lineIndex];
+        if (line && line.onClick) {
+          line.onClick();
+        }
+      }
+    });
   }
 }
