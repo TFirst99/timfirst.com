@@ -1,6 +1,5 @@
 export class PopupUtil {
-  constructor() {
-    constructor(width = 46)
+  constructor(width = 46) {
     this.popup = null;
     this.content = null;
     this.width = width;

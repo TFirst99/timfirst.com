@@ -10,7 +10,7 @@ export class PollingProjectManager {
     this.jsonUrl = "/json/polling-project.json";
     this.popupJsonUrl = "/json/polling-project-popup.json";
   }
-
+  
   async loadPopupContent() {
     try {
       const response = await fetch(this.popupJsonUrl);
