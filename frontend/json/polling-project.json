@@ -1,10 +1,10 @@
 {
   "project": [
-    "POLLING AVERAGE MODEl",
+    "POLLING AVERAGE MODEL",
     "",
     "python program that uses election polling ",
-    "data to create a polling average and      ",
-    "showcases different ways to weight polls  ",
+    "data to create state polling averages.    ",
+    "future versions will run monte carlo sims "
     ""
   ],
   "url": "https://github.com/tfirst99/firstpollingmodel"
