@@ -4,7 +4,7 @@
     "",
     "python program that uses election polling ",
     "data to create state polling averages.    ",
-    "future versions will run monte carlo sims "
+    "future versions will run monte carlo sims ",
     ""
   ],
   "url": "https://github.com/tfirst99/firstpollingmodel"
