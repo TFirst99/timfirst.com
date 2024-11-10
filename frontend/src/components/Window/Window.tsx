@@ -36,46 +36,42 @@ export function Window({
       onStop={() => setIsDragging(false)}
     >
       <div
-        className={`absolute ${width} ${height} bg-slate-800 rounded-lg shadow-lg overflow-hidden transition-shadow duration-200 ${
+        className={`absolute ${width} ${height} bg-white rounded-lg shadow-lg overflow-hidden transition-shadow duration-200 ${
           isDragging ? "shadow-2xl" : ""
         }`}
         style={{ zIndex }}
         onClick={onFocus}
       >
-        {/* Window Title Bar */}
+        {/* macOS-style window header */}
         <div
-          className="window-handle h-10 bg-slate-700 flex items-center justify-between px-4 select-none border-b border-slate-600"
+          className="window-handle h-7 bg-[#E5E5E5] flex items-center px-2 select-none border-b border-[#D1D1D1]"
           style={{ cursor: "grab" }}
         >
-          <h2 className="text-sm font-medium text-slate-200">{title}</h2>
-          {onClose && (
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                onClose();
-              }}
-              className="text-slate-400 hover:text-slate-200 hover:bg-red-500 rounded p-1 transition-colors"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+          {/* Window controls */}
+          <div className="flex items-center space-x-2">
+            {onClose && (
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onClose();
+                }}
+                className="w-3 h-3 rounded-full bg-[#FF5F57] hover:bg-[#FF4444] flex items-center justify-center"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
-          )}
+                <span className="sr-only">Close</span>
+              </button>
+            )}
+            <div className="w-3 h-3 rounded-full bg-[#FEBC2E]" />
+            <div className="w-3 h-3 rounded-full bg-[#28C840]" />
+          </div>
+
+          {/* Window title */}
+          <h2 className="text-[13px] text-[#4A4A4A] absolute left-1/2 -translate-x-1/2">
+            {title}
+          </h2>
         </div>
 
         {/* Window Content */}
-        <div className="p-4 h-[calc(100%-2.5rem)] overflow-auto select-text">
+        <div className="h-[calc(100%-1.75rem)] overflow-auto select-text">
           {children}
         </div>
       </div>

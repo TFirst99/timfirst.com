@@ -10,11 +10,11 @@ export function DesktopIcon({ item, onClick }: DesktopIconProps) {
   const getIcon = () => {
     switch (item.type) {
       case "folder":
-        return <Folder className="w-12 h-12 text-slate-300 mb-1" />;
+        return <Folder className="w-12 h-12 text-black mb-1" />;
       case "app":
-        return <App className="w-12 h-12 text-slate-300 mb-1" />;
+        return <App className="w-12 h-12 text-black mb-1" />;
       default:
-        return <File className="w-12 h-12 text-slate-300 mb-1" />;
+        return <File className="w-12 h-12 text-black mb-1" />;
     }
   };
 
@@ -24,7 +24,7 @@ export function DesktopIcon({ item, onClick }: DesktopIconProps) {
       className="w-24 flex flex-col items-center p-2 rounded hover:bg-slate-800/50 text-center group"
     >
       {getIcon()}
-      <span className="text-sm text-slate-300 break-words w-full group-hover:text-slate-100">
+      <span className="text-sm text-black break-words w-full group-hover:text-slate-100">
         {item.name}
       </span>
     </button>

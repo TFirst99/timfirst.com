@@ -21,21 +21,25 @@ const FileExplorerColumn: React.FC<{
   selectedItem: string | null;
   onItemSelect: (item: FileSystemItem, path: string) => void;
 }> = ({ path, items, selectedItem, onItemSelect }) => (
-  <div className="flex-1 border-r border-slate-700 h-full overflow-y-auto">
-    <div className="space-y-1 p-2">
+  <div className="flex-1 border-r border-[#E5E5E5] h-full overflow-y-auto">
+    <div className="space-y-0.5 p-1">
       {items.map((item) => (
         <button
           key={item.name}
           onClick={() => onItemSelect(item, path)}
-          className={`w-full flex items-center p-2 rounded text-left hover:bg-slate-700
-            ${selectedItem === item.name ? "bg-slate-700 text-slate-200" : "text-slate-400"}`}
+          className={`w-full flex items-center px-2 py-1 rounded-md text-left
+            ${
+              selectedItem === item.name
+                ? "bg-[#0051FE] text-white"
+                : "text-[#4A4A4A] hover:bg-[#F5F5F5]"
+            }`}
         >
           {item.type === "folder" ? (
             <Folder className="w-4 h-4 mr-2 flex-shrink-0" />
           ) : (
             <File className="w-4 h-4 mr-2 flex-shrink-0" />
           )}
-          <span className="truncate">{item.name}</span>
+          <span className="truncate text-sm">{item.name}</span>
         </button>
       ))}
     </div>
@@ -93,20 +97,20 @@ const FileExplorer = forwardRef<FileExplorerRef, FileExplorerProps>(
       >
         <div className="flex flex-col h-full">
           {/* Path breadcrumb */}
-          <div className="p-2 border-b border-slate-700 text-sm text-slate-400">
+          <div className="px-3 py-2 border-b border-[#E5E5E5] text-sm text-[#4A4A4A] bg-[#F5F5F5]">
             <button
               onClick={() => {
                 setCurrentPath("/");
                 setSelectedFolder(null);
               }}
-              className="hover:text-slate-200"
+              className="hover:text-[#0051FE]"
             >
-              root
+              timfirst
             </button>
             {currentPath !== "/" && (
               <>
                 <span className="mx-2">/</span>
-                <span className="text-slate-200">{currentPath.slice(1)}</span>
+                <span className="text-[#4A4A4A]">{currentPath.slice(1)}</span>
               </>
             )}
           </div>
