@@ -47,11 +47,6 @@ export function Window({
           <h2 className="text-sm font-medium text-slate-200">{title}</h2>
 
           {/* Window Controls (decorative for now) */}
-          <div className="flex gap-2">
-            <div className="w-3 h-3 rounded-full bg-slate-500 opacity-50" />
-            <div className="w-3 h-3 rounded-full bg-slate-500 opacity-50" />
-            <div className="w-3 h-3 rounded-full bg-slate-500 opacity-50" />
-          </div>
         </div>
 
         {/* Window Content */}
