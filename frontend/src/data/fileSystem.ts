@@ -3,41 +3,44 @@ import { FileSystemStructure } from "../types/fileSystem";
 export const fileSystemData: FileSystemStructure = {
   "/": [
     {
-      name: "about.txt",
       type: "file",
-      content: "Welcome to my personal start page!",
+      name: "about.txt",
+      content: "# TIMFIRST.COM\n\nWelcome to my Website.",
     },
     {
+      type: "folder",
       name: "Projects",
-      type: "folder",
     },
     {
-      name: "Blog",
       type: "folder",
+      name: "Blog",
     },
   ],
   "/Projects": [
     {
-      name: "project1.md",
       type: "file",
-      content: "# Project 1\n\nThis is my first project...",
+      name: "Personal_Site.txt",
+      content:
+        "# Personal Website\n\n I created **this** website to learn Javascript and web development.",
     },
     {
-      name: "project2.md",
       type: "file",
-      content: "# Project 2\n\nThis is my second project...",
+      name: "Polling_Model.txt",
+      content:
+        "# Polling Model\n\nThis is a simple polling average model written in python.",
     },
   ],
   "/Blog": [
     {
-      name: "post1.md",
       type: "file",
-      content: "# First Blog Post\n\nWelcome to my blog...",
+      name: "First_Blog_Post.txt",
+      content: "# First Blog\n ### 11-9-2024 \n blog test 1",
     },
     {
-      name: "post2.md",
       type: "file",
-      content: "# Second Blog Post\n\nMore interesting content...",
+      name: "Markdown_Test.txt",
+      content:
+        "# Markdown Test\n ### 11-9-2024 \n **bold** *italic* ***bold italic***",
     },
   ],
 };

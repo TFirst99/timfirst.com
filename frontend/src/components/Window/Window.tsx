@@ -8,6 +8,7 @@ interface WindowProps {
   width?: string;
   height?: string;
   onFocus?: () => void;
+  onClose?: () => void;
   zIndex?: number;
 }
 
@@ -18,6 +19,7 @@ export function Window({
   width = "w-96",
   height = "h-[500px]",
   onFocus,
+  onClose,
   zIndex = 0,
 }: WindowProps) {
   const [isDragging, setIsDragging] = useState(false);
@@ -25,6 +27,7 @@ export function Window({
   return (
     <Draggable
       defaultPosition={defaultPosition}
+      bounds="parent"
       handle=".window-handle"
       onStart={() => {
         setIsDragging(true);
@@ -45,8 +48,30 @@ export function Window({
           style={{ cursor: "grab" }}
         >
           <h2 className="text-sm font-medium text-slate-200">{title}</h2>
-
-          {/* Window Controls (decorative for now) */}
+          {onClose && (
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                onClose();
+              }}
+              className="text-slate-400 hover:text-slate-200 hover:bg-red-500 rounded p-1 transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          )}
         </div>
 
         {/* Window Content */}
