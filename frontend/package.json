@@ -1,0 +1,26 @@
+{
+  "type": "module",
+  "name": "frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "node src/build.js",
+    "dev": "nodemon --watch content --watch src --watch public -e js,md,html,css --exec 'npm run build'",
+    "serve": "serve dist",
+    "start": "concurrently \"npm run dev\" \"npm run serve\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "figlet": "^1.8.0",
+    "marked": "^15.0.0",
+    "marked-gfm-heading-id": "^4.1.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "nodemon": "^3.1.7",
+    "serve": "^14.2.4"
+  }
+}
