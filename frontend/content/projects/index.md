@@ -1,4 +1,4 @@
-# Projects
+---
 
 ### [Polling Average Model](https://github.com/TFirst99/FirstPollingModel)
 
