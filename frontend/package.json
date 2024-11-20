@@ -1,0 +1,29 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.js",
+    "serve": "serve dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "fs-extra": "^11.2.0",
+    "gray-matter": "^4.0.3",
+    "katex": "^0.16.11",
+    "markdown-it": "^14.1.0",
+    "markdown-it-anchor": "^9.2.0",
+    "markdown-it-footnote": "^4.0.0",
+    "markdown-it-table-of-contents": "^0.8.0",
+    "markdown-it-texmath": "^1.0.0",
+    "slugify": "^1.6.6"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "nodemon": "^3.1.7",
+    "serve": "^14.2.4"
+  }
+}
