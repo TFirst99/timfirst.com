@@ -23,6 +23,7 @@ async function buildSite() {
   await fs.ensureDir('./dist');
   await fs.copy('./src/assets', './dist/assets');
   await fs.copy('./src/styles', './dist/styles');
+  await fs.copy('./src/assets', './dist/assets');
 
   await buildMainPages();
   await buildPosts();

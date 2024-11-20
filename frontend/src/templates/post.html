@@ -16,13 +16,16 @@
             <a href="/projects">Projects</a>
             <a href="/writing">Writing</a>
         </nav>
-        <main>
-            <header class="page-header">
-                <h1>{{title}}</h1>
-                <p class="description">{{description}}</p>
-                <time>{{date}}</time>
-            </header>
-            <div class="content">{{content}}</div>
-        </main>
+        <div class="transition-container">
+            <main>
+                <header class="page-header">
+                    <h1>{{title}}</h1>
+                    <p class="description">{{description}}</p>
+                    <time>{{date}}</time>
+                </header>
+                <div class="content">{{content}}</div>
+            </main>
+        </div>
+        <script src="/assets/transition.js"></script>
     </body>
 </html>
