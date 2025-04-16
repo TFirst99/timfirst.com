@@ -1,16 +1,16 @@
 {
   "about1": [
     "ABOUT ME",
-    "undergrad student",  
     "23 years old     ",
-    "learning to code ",
-    "reading & writing"
+    "undergrad student",  
+    "coding w/ claude ",
+    "running & reading"
   ],
   "about2": [
     "INTERESTS",
-    "public goods game",
-    "cooperation/trust",
-    "econometrics     ",
-    "ordinary langauge"
+    "experimental econ",
+    "research methods ",
+    "philosophy of sci",
+    "heuristics/choice"
   ]
 }
