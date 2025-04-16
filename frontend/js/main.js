@@ -20,6 +20,7 @@ class App {
     this.titleWidgetManager = new TitleWidgetManager();
     this.websiteProjectManager = new WebsiteProjectManager();
     this.pollingProjectManager = new PollingProjectManager();
+    this.simulationProjectManager = new SimulationProjectManager();
   }
 
   init() {
@@ -32,6 +33,7 @@ class App {
     this.titleWidgetManager.init();
     this.websiteProjectManager.init();
     this.pollingProjectManager.init();
+    this.simulationProjectManager.init();
   }
 }
 
