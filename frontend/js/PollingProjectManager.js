@@ -1,9 +1,13 @@
-import { WidgetUtil } from '/js/utils/widgetUtil.js';
+import { WidgetUtil } from "/js/utils/widgetUtil.js";
 
 export class PollingProjectManager {
   constructor() {
-    this.pollingProjectElement = document.getElementById("polling-project-widget");
-    this.pollingProjectWidget = new WidgetUtil(this.pollingProjectElement, { width: 46 });
+    this.pollingProjectElement = document.getElementById(
+      "polling-project-widget",
+    );
+    this.pollingProjectWidget = new WidgetUtil(this.pollingProjectElement, {
+      width: 46,
+    });
     this.jsonUrl = "/json/polling-project.json";
   }
 
@@ -24,16 +28,14 @@ export class PollingProjectManager {
   updateWidget(data) {
     if (data) {
       this.pollingProjectWidget.updateWidget(
-        ...data.project.map(line => ({ content: line })),
-        { 
-          content: 'VIEW ON GITHUB', 
-          url: data.url
-        }
+        ...data.project.map((line) => ({ content: line })),
+        {
+          content: "VIEW ON GITHUB",
+          url: data.url,
+        },
       );
     } else {
-      this.pollingProjectWidget.updateWidget(
-        { content: "error loading link" }
-      );
+      this.pollingProjectWidget.updateWidget({ content: "error loading link" });
     }
   }
 
