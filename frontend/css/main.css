@@ -171,6 +171,12 @@ html body {
     justify-self: center;
 }
 
+#simulation-project-widget {
+    grid-column: 1 / -1;
+    grid-row: 21 / span 8;
+    justify-self: center;
+}
+
 /*styles for clickable links in widgets*/
 .link-wrapper {
     display: inline-block;
