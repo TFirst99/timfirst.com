@@ -1,8 +1,8 @@
 ---
-title: Tim First's Website
+title: Timothy First's Website
 ---
 
-This website contains information about me, some articles and blogposts I have written on various topics, and information about my research.
+My name is Tim, and this is my personal website. This site has some info about me, a few articles, and some of my research in economics.
 
 ## Articles
 
