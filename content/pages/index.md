@@ -1,13 +1,12 @@
 ---
 title: Timothy First's Website
 ---
+My name is Tim First, and I am a 23 year old research assistant at the University of Chicago. This site contains my research and some of my writings.
 
-My name is Tim, and this is my personal website. This site has some info about me, a few articles, and some of my research in economics.
-
-## Articles
-
+# Articles
+<hr>
 (Coming Soon)
 
-## Research
-
+# Research
+<hr>
 (Coming Soon)

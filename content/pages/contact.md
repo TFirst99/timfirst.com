@@ -1,10 +1,7 @@
 ---
-Title: Contact
-date: June 2, 2025
+title: Contact Info
 ---
 
-You can reach me at:
-
-**Email**: timothycfirst@gmail.com
-
-**GitHub**: [github.com/tfirst99](https://github.com/TFirst99)
+email&nbsp;&nbsp;:&nbsp;[timothycfirst@gmail.com](mailto:timothycfirst@gmail.com)
+<br>
+github&nbsp;:&nbsp;[tfirst99](https://github.com/TFirst99)
