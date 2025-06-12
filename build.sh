@@ -8,10 +8,6 @@ RESOURCES_DIR="content/resources"
 OUTPUT_DIR="output"
 TEMPLATE="template.html"
 
-for filter in filters/*.lua; do
-    FILTERS="$FILTERS --lua-filter=$filter"
-done
-
 rm -rf "$OUTPUT_DIR"
 mkdir -p "$OUTPUT_DIR"
 
@@ -33,7 +29,6 @@ pandoc "$md_file" \
     --template="$TEMPLATE" \
     --standalone \
     --toc=false \
-    $FILTERS \
     --output="$output_file"
 done
 
