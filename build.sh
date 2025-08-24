@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Configuration
-CONTENT_DIR="content/pages"
-RESOURCES_DIR="content/resources"
+CONTENT_DIR="content"
+ASSETS_DIR="assets"
 OUTPUT_DIR="output"
 TEMPLATE="template.html"
 
@@ -24,8 +24,7 @@ rm -rf "$OUTPUT_DIR"
 mkdir -p "$OUTPUT_DIR"
 
 # Copy static assets
-cp -r "$RESOURCES_DIR" "$OUTPUT_DIR/"
-cp "styles.css" "$OUTPUT_DIR/"
+cp -r "$ASSETS_DIR" "$OUTPUT_DIR/"
 
 echo "Copied static assets"
 

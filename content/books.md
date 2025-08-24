@@ -2,7 +2,7 @@
 
 ---
 
-::: {.images columns="4" path="/resources/books/" overlay="true"}
+::: {.images columns="4" path="/assets/images/" overlay="true"}
 - wordandobject.jpg | Word and Object | A slow, somewhat difficult read. I'm not familiar enough with the rest of the literature to follow all the arguments, but this is one of my favorite pieces of philosophy so far.
 - patriot.jpg | Patriot | Navalny is a skilled communicator. He works hard to express a patriotism for his country that makes his arguments against the current Russian government much more compelling.
 - themoneyillusion.jpg | The Money Illusion | I love Scott Sumner's writing. I remain somewhat skeptical of his description of causality w.r.t. the 2008 financial crisis, but I understand his point.
@@ -15,7 +15,7 @@
 
 ---
 
-::: {.images columns="4" path="/resources/books/" overlay="true"}
+::: {.images columns="4" path="/assets/images/" overlay="true"}
 - experimentsineconomics.jpg | Experiments in Economics | This book is mostly an account of some interesting economic experiments. Not a great resource for any deeper understanding, but entertaining nonetheless.
 - gunsgermsandsteel.jpg | Guns, Germs, and Steel | Guns, Germs, and Steel is more maligned than it deserves. Like every book in its genre, it overstates its claims; regardless, it's informative and thought-provoking.
 - whynationsfail.jpg | Why Nations Fail | Yes, the econometrics are flawed. Yes, the theory struggles to explain the success of China and India. Yes, you should still read it.

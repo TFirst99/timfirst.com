@@ -82,7 +82,7 @@ These do not format text inside of them, so they work well for in-text drawings:
 
 We can show images:
 
-::: {.images columns="2" path="/resources/" overlay="true"}
+::: {.images columns="2" path="/assets/images/" overlay="true"}
 - goldfish.jpg | Goldfish | This image can be moused over for a description.
 :::
 
