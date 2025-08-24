@@ -79,9 +79,7 @@ end
 
 function create_image_item(image_data, base_path)
     -- Create HTML structure for a single image item
-    local image_elem = pandoc.Para({
-        pandoc.Image("", base_path .. image_data.image, "")
-    })
+    local image_elem = pandoc.Image("", base_path .. image_data.image, "")
 
     if image_data.description then
         -- Interactive overlay structure for hoverable images with description
