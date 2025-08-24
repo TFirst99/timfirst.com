@@ -83,23 +83,23 @@ These do not format text inside of them, so they work well for in-text drawings:
 We can show images:
 
 ::: image2
-- goldfish.jpg 
-- frogandtoad.jpg 
+- goldfish.webp 
+- frogandtoad.webp 
 :::
 
 And we can make them show text on hover:
 
 ::: image4
-- winterlandscape.jpg | Winter Landscape - Caspar David Friedrich
-- machiavelli.jpg | Portrait of Niccolò Machiavelli - Santi di Tito
-- salutat.jpg | Salutat - Thomas Eakins
-- day.jpg | Day - Agnes Pelton
+- winterlandscape.webp | Winter Landscape - Caspar David Friedrich
+- machiavelli.webp | Portrait of Niccolò Machiavelli - Santi di Tito
+- salutat.webp | Salutat - Thomas Eakins
+- day.webp | Day - Agnes Pelton
 :::
 
 Or just a single large image:
 
 ::: image1
-- iceskatingvillage.jpg
+- iceskatingvillage.webp
 :::
 
 
