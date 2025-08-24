@@ -1,0 +1,186 @@
+/* ===== BASE SETTINGS ===== */
+* {
+    font-size: 16px;
+}
+
+html {
+    font-family: "DejaVu Sans Mono", monospace;
+    max-width: 80ch;
+    margin: 0 auto;
+    background: #f5f5f2;
+}
+
+/* ===== TEXT ELEMENTS ===== */
+p {
+    margin-top: 0;
+    text-align: justify;
+}
+
+.title {
+    text-decoration: none;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+}
+
+/* ===== HEADINGS ===== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 4ch;
+    margin-bottom: 0;
+}
+
+/* ===== LISTS ===== */
+ul {
+    padding-left: 4ch;
+    margin-top: 0;
+}
+
+ul li {
+    padding-left: 1ch;
+}
+
+ol {
+    padding-left: 5ch;
+    margin-top: 0;
+}
+
+/* ===== BLOCK ELEMENTS ===== */
+blockquote,
+pre {
+    margin: 0 0 2ch 0;
+    padding: 2ch;
+}
+
+blockquote {
+    background-color: #fbfbfb;
+    border: dashed 1px grey;
+    font-style: italic;
+    text-align: justify;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+pre {
+    background-color: #fbfbfb;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+/* ===== IMAGES ===== */
+img {
+    border: 1px solid black;
+}
+
+/* ===== IMAGE GRID SYSTEM ===== */
+.image-grid {
+    display: grid;
+    column-gap: 3ch;
+    row-gap: 4ch;
+    margin: 1ch 0;
+}
+
+.image-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+.image-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+.image-grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.image-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===== INTERACTIVE IMAGE OVERLAYS ===== */
+.image-cover {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-cover p {
+    margin: 0;
+}
+
+.image-cover img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: filter 0.3s ease;
+    box-sizing: border-box;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-text {
+    color: white;
+    text-align: left;
+    padding: 1ch;
+    font-size: 10px;
+    line-height: 1.4;
+}
+
+.image-text p {
+    margin: 0;
+    text-align: left;
+    font-size: 10px;
+}
+
+.image-cover:hover img {
+    filter: blur(3px);
+}
+
+.image-cover:hover .image-overlay {
+    opacity: 1;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 800px) {
+    * {
+        font-size: 12px;
+    }
+
+    .title,
+    .title b {
+        font-size: 16px;
+    }
+
+    /* Keep navigation width proportional since title text stays 16px */
+    div[style*="width: 23ch"] {
+        width: 221.567px !important;
+        text-align-last: justify !important;
+    }
+
+    .image-grid-3,
+    .image-grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
