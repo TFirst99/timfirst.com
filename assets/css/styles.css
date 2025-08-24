@@ -85,25 +85,24 @@ img {
 /* ===== IMAGE GRID SYSTEM ===== */
 .image-grid {
     display: grid;
+    grid-template-columns: repeat(var(--grid-columns, 4), 1fr);
     column-gap: 3ch;
     row-gap: 4ch;
-    margin: 1ch 0;
-}
-
-.image-grid-2 {
-    grid-template-columns: repeat(2, 1fr);
-}
-.image-grid-3 {
-    grid-template-columns: repeat(3, 1fr);
-}
-.image-grid-4 {
-    grid-template-columns: repeat(4, 1fr);
+    margin-top: 0;
+    margin-bottom: 1em;
 }
 
 .image-item {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-sizing: border-box;
 }
 
 /* ===== INTERACTIVE IMAGE OVERLAYS ===== */
@@ -179,8 +178,7 @@ img {
         text-align-last: justify !important;
     }
 
-    .image-grid-3,
-    .image-grid-4 {
-        grid-template-columns: repeat(2, 1fr);
+    .image-grid {
+        grid-template-columns: repeat(min(var(--grid-columns, 4), 2), 1fr);
     }
 }

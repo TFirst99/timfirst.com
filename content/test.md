@@ -82,9 +82,26 @@ These do not format text inside of them, so they work well for in-text drawings:
 
 We can show images:
 
-::: {.images columns="2" path="/assets/images/" overlay="true"}
-- goldfish.jpg | Goldfish | This image can be moused over for a description.
+::: image2
+- goldfish.jpg 
+- frogandtoad.jpg 
 :::
+
+And we can make them show text on hover:
+
+::: image4
+- winterlandscape.jpg | Winter Landscape - Caspar David Friedrich
+- machiavelli.jpg | Portrait of Niccolò Machiavelli - Santi di Tito
+- salutat.jpg | Salutat - Thomas Eakins
+- day.jpg | Day - Agnes Pelton
+:::
+
+Or just a single large image:
+
+::: image1
+- iceskatingvillage.jpg
+:::
+
 
 ## Summary
 

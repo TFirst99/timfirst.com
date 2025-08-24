@@ -1,40 +1,40 @@
 --[[
 Image Grid Filter for Pandoc
-Converts markdown div blocks with "images" or "books" classes into responsive image grids.
+Converts markdown div blocks with "image" + number classes into responsive image grids.
 
 Usage in markdown:
-::: {.images columns="3" path="/resources/" overlay="false"}
-- image1.jpg | Title | Description text
-- image2.jpg | Another Title | More description
+::: image3
+- image1.jpg
+- image2.jpg | Description text shows as overlay on hover
 :::
 
-::: {.books columns="4" path="/resources/books/" overlay="true"}
-- book1.jpg | Book Title | Review text
+::: image4
+- book1.jpg | Review text
 :::
 --]]
 
 function Div(div)
-    if div.classes:includes("images") then
-        local columns = div.attributes.columns or "4"
-        local base_path = div.attributes.path or "/resources/"
-        local with_overlay = div.attributes.overlay == "true"
-        return generate_image_grid(div.content, columns, base_path, with_overlay)
+    -- Check if any class starts with "image" followed by a number
+    local columns = nil
+    for _, class in ipairs(div.classes) do
+        local num = string.match(class, "^image(%d+)$")
+        if num then
+            columns = num
+            break
+        end
+    end
     
-    elseif div.classes:includes("books") then
-        -- Books have overlay enabled by default for interactive covers
-        local columns = div.attributes.columns or "4" 
-        local base_path = div.attributes.path or "/resources/books/"
-        local with_overlay = (div.attributes.overlay ~= "false")
-        return generate_image_grid(div.content, columns, base_path, with_overlay)
+    if columns then
+        return generate_image_grid(div.content, columns)
     end
     
     return div
 end
 
-function generate_image_grid(content, columns, base_path, with_overlay)
+function generate_image_grid(content, columns)
     -- Generate HTML structure for image grid from bullet list content
     local grid_items = {}
-    base_path = base_path or "/resources/"
+    local base_path = "/assets/images/"
 
     -- Extract and process bullet list items
     for _, elem in ipairs(content) do
@@ -42,20 +42,23 @@ function generate_image_grid(content, columns, base_path, with_overlay)
             for _, item in ipairs(elem.content) do
                 local image_data = parse_image_item(item)
                 if image_data then
-                    local image_item = create_image_item(image_data, base_path, with_overlay)
+                    local image_item = create_image_item(image_data, base_path)
                     table.insert(grid_items, image_item)
                 end
             end
         end
     end
 
-    return pandoc.Div(grid_items, { class = "image-grid image-grid-" .. columns })
+    return pandoc.Div(grid_items, { 
+        class = "image-grid",
+        style = "--grid-columns: " .. columns 
+    })
 end
 
 function parse_image_item(item)
     -- Parse a bullet list item into image data components
-    -- Expected format: "image.jpg | Title | Description text"
-    -- Returns table with image, title, description fields or nil if invalid
+    -- Expected format: "image.jpg" or "image.jpg | Description text"
+    -- Returns table with image, description fields or nil if invalid
     local text = pandoc.utils.stringify(item)
     local parts = {}
     
@@ -64,25 +67,24 @@ function parse_image_item(item)
         table.insert(parts, part:match("^%s*(.-)%s*$"))
     end
 
-    if #parts >= 3 then
+    if #parts >= 1 then
         return {
             image = parts[1],
-            title = parts[2], 
-            description = parts[3]
+            description = parts[2] or nil  -- nil if no description
         }
     end
 
     return nil
 end
 
-function create_image_item(image_data, base_path, with_overlay)
+function create_image_item(image_data, base_path)
     -- Create HTML structure for a single image item
     local image_elem = pandoc.Para({
-        pandoc.Image(image_data.title, base_path .. image_data.image, image_data.title)
+        pandoc.Image("", base_path .. image_data.image, "")
     })
 
-    if with_overlay then
-        -- Interactive overlay structure for books/hoverable images
+    if image_data.description then
+        -- Interactive overlay structure for hoverable images with description
         return pandoc.Div({
             pandoc.Div({
                 image_elem,
@@ -95,11 +97,9 @@ function create_image_item(image_data, base_path, with_overlay)
         }, { class = "image-item" })
         
     else
-        -- Simple image item with visible title and description
+        -- Simple image with no description
         return pandoc.Div({
-            image_elem,
-            pandoc.Para({ pandoc.Strong({ pandoc.Str(image_data.title) }) }),
-            pandoc.Para({ pandoc.Str(image_data.description) })
+            image_elem
         }, { class = "image-item" })
     end
 end
