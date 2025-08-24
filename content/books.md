@@ -3,9 +3,9 @@
 ---
 
 ::: image4
-- wordandobject.jpg | A slow, somewhat difficult read. I'm not familiar enough with the rest of the literature to follow all the arguments, but this is one of my favorite pieces of philosophy so far.
-- patriot.jpg | Navalny is a skilled communicator. He works hard to express a patriotism for his country that makes his arguments against the current Russian government much more compelling.
-- themoneyillusion.jpg | I love Scott Sumner's writing. I remain somewhat skeptical of his description of causality w.r.t. the 2008 financial crisis, but I understand his point.
+- wordandobject.webp | A slow, somewhat difficult read. I'm not familiar enough with the rest of the literature to follow all the arguments, but this is one of my favorite pieces of philosophy so far.
+- patriot.webp | Navalny is a skilled communicator. He works hard to express a patriotism for his country that makes his arguments against the current Russian government much more compelling.
+- themoneyillusion.webp | I love Scott Sumner's writing. I remain somewhat skeptical of his description of causality w.r.t. the 2008 financial crisis, but I understand his point.
 :::
 
 \
@@ -16,22 +16,22 @@
 ---
 
 ::: image4
-- experimentsineconomics.jpg | This book is mostly an account of some interesting economic experiments. Not a great resource for any deeper understanding, but entertaining nonetheless.
-- gunsgermsandsteel.jpg | Guns, Germs, and Steel is more maligned than it deserves. Like every book in its genre, it overstates its claims; regardless, it's informative and thought-provoking.
-- whynationsfail.jpg | Yes, the econometrics are flawed. Yes, the theory struggles to explain the success of China and India. Yes, you should still read it.
-- weirdestpeople.jpg | This book should be read as a follow-up to Guns, Germs, and Steel and Why Nations Fail. Another attempt at explaining the success of some societies over others, this time with  focus on psychology.
-- cows.jpg | I cannot recommend anyone read this book, but it is undeniably well written, and very hard to put down. Cows is undoubtedly one of the most disgusting books ever written.
-- beingandtime.jpg | This book is terrible. The only reason to read it is the feeling of freedom it provides when you are finally done.
-- howelitesate.jpg | A leftist's perspective on why leftist movements fail.
-- lolita.jpg | I wish every book was as well written as Lolita. Nabakov writes so well that you willingly follow Humbert Humbert for 300 pages.
-- howthewarwaswon.jpg | This book is lauded for a reason. Even if you aren't a history buff, it's worth reading. Note that it is a contrarian account, and not a definitive history.
-- philosophicalinvestigations.jpg | I wanted to enjoy this more than I did. Wittgenstein's style is not conducive to rhetorical clarity. I still think it's worth reading if you are interested in language and meaning.
-- abundance.jpg | The best part of this book is the research on specific failures of government. It is weaker in its prescription. American left wing politics have commitments to policies that are deeply harmful. This book will not change that.
-- thetrial.jpg | I was incredibly upset when I finished this book, mostly because it felt unfinished. A week later I decided that it was one of my favorite books of all time.
-- houseofleaves.jpg | I've read House of Leaves four times now, and get something new each time. I'm not sure if it's a great work of literature, but it is fun.
-- olivertwist.jpg | I read Oliver Twist when I was young, and loved it. Charles Dickens should be recommended reading for kids because his books are fun.
-- persepolis.jpg | An account of growing up in Iran during the Islamic Revolution. Heartbreaking.
-- theodyssey.jpg | I last read the Odyssey when I was about 10 years old, so I should probably read it again. I remember enjoying it a lot.
-- farenheit415.jpg | A classic dystopian novel. I'm not sure if science fiction is the best genre for cultural critique or commentary, but it's an enjoyable book.
-- theonceandfutureking.jpg | A classic fantasy novel. This book is just fun.
+- experimentsineconomics.webp | This book is mostly an account of some interesting economic experiments. Not a great resource for any deeper understanding, but entertaining nonetheless.
+- gunsgermsandsteel.webp | Guns, Germs, and Steel is more maligned than it deserves. Like every book in its genre, it overstates its claims; regardless, it's informative and thought-provoking.
+- whynationsfail.webp | Yes, the econometrics are flawed. Yes, the theory struggles to explain the success of China and India. Yes, you should still read it.
+- weirdestpeople.webp | This book should be read as a follow-up to Guns, Germs, and Steel and Why Nations Fail. Another attempt at explaining the success of some societies over others, this time with  focus on psychology.
+- cows.webp | I cannot recommend anyone read this book, but it is undeniably well written, and very hard to put down. Cows is undoubtedly one of the most disgusting books ever written.
+- beingandtime.webp | This book is terrible. The only reason to read it is the feeling of freedom it provides when you are finally done.
+- howelitesate.webp | A leftist's perspective on why leftist movements fail.
+- lolita.webp | I wish every book was as well written as Lolita. Nabakov writes so well that you willingly follow Humbert Humbert for 300 pages.
+- howthewarwaswon.webp | This book is lauded for a reason. Even if you aren't a history buff, it's worth reading. Note that it is a contrarian account, and not a definitive history.
+- philosophicalinvestigations.webp | I wanted to enjoy this more than I did. Wittgenstein's style is not conducive to rhetorical clarity. I still think it's worth reading if you are interested in language and meaning.
+- abundance.webp | The best part of this book is the research on specific failures of government. It is weaker in its prescription. American left wing politics have commitments to policies that are deeply harmful. This book will not change that.
+- thetrial.webp | I was incredibly upset when I finished this book, mostly because it felt unfinished. A week later I decided that it was one of my favorite books of all time.
+- houseofleaves.webp | I've read House of Leaves four times now, and get something new each time. I'm not sure if it's a great work of literature, but it is fun.
+- olivertwist.webp | I read Oliver Twist when I was young, and loved it. Charles Dickens should be recommended reading for kids because his books are fun.
+- persepolis.webp | An account of growing up in Iran during the Islamic Revolution. Heartbreaking.
+- theodyssey.webp | I last read the Odyssey when I was about 10 years old, so I should probably read it again. I remember enjoying it a lot.
+- farenheit415.webp | A classic dystopian novel. I'm not sure if science fiction is the best genre for cultural critique or commentary, but it's an enjoyable book.
+- theonceandfutureking.webp | A classic fantasy novel. This book is just fun.
 :::

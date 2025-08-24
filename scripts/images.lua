@@ -13,6 +13,25 @@ Usage in markdown:
 :::
 --]]
 
+function get_image_dimensions(image_path)
+    -- Use `file` command to get image dimensions
+    local handle = io.popen("file '" .. image_path .. "' | grep -oE '[0-9]+x[0-9]+'")
+    if handle then
+        local result = handle:read("*l")
+        handle:close()
+        if result then
+            local width, height = result:match("(%d+)x(%d+)")
+            if width and height then
+                return {
+                    width = tonumber(width),
+                    height = tonumber(height)
+                }
+            end
+        end
+    end
+    return nil
+end
+
 function Div(div)
     -- Check if any class starts with "image" followed by a number
     local columns = nil
@@ -80,6 +99,13 @@ end
 function create_image_item(image_data, base_path)
     -- Create HTML structure for a single image item
     local image_elem = pandoc.Image("", base_path .. image_data.image, "")
+
+    -- Get image dimensions to prevent layout shift
+    local dimensions = get_image_dimensions("assets/images/" .. image_data.image)
+    if dimensions then
+        image_elem.attributes.width = tostring(dimensions.width)
+        image_elem.attributes.height = tostring(dimensions.height)
+    end
 
     if image_data.description then
         -- Interactive overlay structure for hoverable images with description
