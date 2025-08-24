@@ -1,4 +1,8 @@
 /* ===== BASE SETTINGS ===== */
+@view-transition {
+    navigation: auto;
+}
+
 * {
     font-size: 16px;
 }
@@ -8,6 +12,29 @@ html {
     max-width: 80ch;
     margin: 0 auto;
     background: #f5f5f2;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+    animation-duration: 0.25s;
+}
+
+::view-transition-old(root) {
+    animation-name: fade-out;
+}
+
+::view-transition-new(root) {
+    animation-name: fade-in;
+}
+
+@keyframes fade-out {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 /* ===== TEXT ELEMENTS ===== */
