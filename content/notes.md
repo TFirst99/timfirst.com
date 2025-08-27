@@ -10,4 +10,4 @@
 
 4. New York City maintains a [comprehensive map](https://tree-map.nycgovparks.org/) of all trees in the city.
 
-5. [Great set of slides (and video)](https://www.nber.org/conferences/si-2025-methods-lecture-uncovering-causal-mechanisms-mediation-analysis-and-surrogate-indices) from Raj Chetty and Kosuke Imai on Mediation Analysis and Surrogate Indices. It's shocking that the video of his presentation only has 1,000 views.
+5. [Great set of slides (and video)](https://www.nber.org/conferences/si-2025-methods-lecture-uncovering-causal-mechanisms-mediation-analysis-and-surrogate-indices) from Raj Chetty and Kosuke Imai on Mediation Analysis and Surrogate Indices. It's shocking that the video of this presentation only has 1,000 views.
