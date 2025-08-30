@@ -107,12 +107,9 @@ function create_image_item(image_data, base_path)
     end
 
     if image_data.description then
-        counter = counter + 1
-        local toggle_id = "toggle-" .. counter
+        image_elem.attributes.tabindex = "0"
         return pandoc.Div({
-            pandoc.RawInline("html", '<input type="checkbox" id="' .. toggle_id .. '" class="toggle" />'),
             pandoc.Div({
-                pandoc.RawInline("html", '<label for="' .. toggle_id .. '" class="toggle-label"></label>'),
                 image_elem,
                 pandoc.Div({
                     pandoc.Div({ 

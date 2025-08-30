@@ -183,35 +183,36 @@ img {
     font-size: 14px;
 }
 
-.image-cover:hover img {
-    filter: blur(3px);
-}
 
-.image-cover:hover .image-overlay {
-    opacity: 1;
-}
-
-/* ===== CLICK TOGGLE ===== */
-.toggle {
-    display: none;
-}
-
-.toggle-label {
+/* ===== TOUCH DEVICE SUPPORT ===== */
+.image-cover img {
     cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
 }
 
-.toggle:checked + .image-cover .image-overlay {
-    opacity: 1;
+/* Devices with precise pointers (mouse) - use hover */
+@media (hover: hover) and (pointer: fine) {
+    .image-cover:hover .image-overlay {
+        opacity: 1;
+    }
+    
+    .image-cover:hover img {
+        filter: blur(3px);
+    }
 }
 
-.toggle:checked + .image-cover img {
-    filter: blur(3px);
+/* Touch devices - use focus for tap-to-show */
+@media (hover: none) {
+    .image-cover img:focus {
+        outline: none;
+    }
+    
+    .image-cover img:focus + .image-overlay {
+        opacity: 1;
+    }
+    
+    .image-cover img:focus {
+        filter: blur(3px);
+    }
 }
 
 /* ===== RESPONSIVE ===== */
