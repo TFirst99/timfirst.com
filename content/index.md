@@ -6,15 +6,19 @@ I am 23 years old econ predoc. I am interested in economics, artificial intellig
 
 I work as a research professional at the University of California, San Diego; however, I live in Chicago, and work out of the University of Chicago. My research focuses on adolescent social media use and its impact on well-being and mental health.
 
+In my free time, I enjoy running, reading, and cooking.
+
 # Content
 
 ---
 
-Look at my [bookshelf](/books) to see what I'm currently reading, or my thoughts on books I've finished.
+[notes](/notes) - I collect links and ideas on this page throughout the month.
 
-I collect links and ideas on my [notes](/notes) page throughout the month. Sign up for my [RSS feed](/rss.xml) to see these regularly.
+[bookshelf](/books) - Look at my bookshelf to see what I'm currently reading, or my thoughts on books I've finished.
 
-I hope to post longer form [writing](/blog) on here soon.
+[writing](/blog) - I hope to post longer form writing on here soon.
+
+[rss](/rss.xml) - subscribe to my rss feed to see my notes at the end of each month, and my writing whenever I post.
 
 ## CONTACT
 
