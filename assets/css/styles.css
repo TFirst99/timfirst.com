@@ -8,7 +8,7 @@
 }
 
 html {
-    font-family: "DejaVu Sans Mono", monospace;
+    font-family: "IBM Plex Sans", sans-serif;
     max-width: 80ch;
     margin: 0 auto;
     background: #f5f5f2;
@@ -28,13 +28,21 @@ html {
 }
 
 @keyframes fade-out {
-    0% { opacity: 1; }
-    100% { opacity: 0; }
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 @keyframes fade-in {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* ===== TEXT ELEMENTS ===== */
@@ -45,6 +53,11 @@ p {
 
 .title {
     text-decoration: none;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.navigation {
+    font-family: "IBM Plex Mono", monospace;
 }
 
 a {
@@ -59,6 +72,7 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: "IBM Plex Mono", monospace;
     font-weight: bold;
     text-transform: uppercase;
     margin-top: 4ch;
@@ -140,7 +154,6 @@ img {
     overflow: hidden;
 }
 
-
 .image-cover img {
     width: 100%;
     height: auto;
@@ -165,16 +178,14 @@ img {
 
 .image-text {
     color: white;
-    text-align: left;
     padding: 1ch;
-    font-size: 10px;
     line-height: 1.4;
 }
 
 .image-text p {
     margin: 0;
     text-align: left;
-    font-size: 10px;
+    font-size: 14px;
 }
 
 .image-cover:hover img {
@@ -185,18 +196,16 @@ img {
     opacity: 1;
 }
 
-
 /* ===== RESPONSIVE ===== */
 @media (max-width: 800px) {
     * {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .title,
     .title b {
         font-size: 16px;
     }
-
 
     .image-grid {
         grid-template-columns: repeat(min(var(--grid-columns, 4), 2), 1fr);
