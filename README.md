@@ -1,3 +1,3 @@
 # timfirst.com
 
-my personal website. monospaced. simple. lightweight.
+my personal website. simple & lightweight.
