@@ -21,3 +21,5 @@
 9. [An unorthodox list of ways to make your life better.](https://practicalbetterments.com/) Drill holes in your keys. Cut your toothbrush in half. Rotate your mattress.
 
 10. High resolution satellite imagery is a woefully underutilized resource. The cost of high resolution images [is rapidly dropping](https://landscape.satsummit.io/capture/resolution-considerations.html), but adoption is surprisingly low in economic research. Data processing used to be limitation, but is much easier now with object detection models like [D-FINE](https://github.com/Peterande/D-FINE) or YOLO.
+
+11. [This blog post talks about being rejected by Anthropic.](https://taylor.town/flunking-anthropic) I think it's important not to take rejection as a strong signal of your own self worth. Particularly in the case of Anthropic - probably the most sought after job in the world right now - the vast majority of smart, hardworking, talented, and deserving people will be rejected simply because there are more applicants than positions. This lesson applies to many areas of life.
