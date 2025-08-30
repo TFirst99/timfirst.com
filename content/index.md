@@ -14,7 +14,7 @@ In my free time, I enjoy running, reading, and cooking.
 
 [notes](/notes) - I collect links and ideas on this page throughout the month.
 
-[bookshelf](/books) - Look at my bookshelf to see what I'm currently reading, or my thoughts on books I've finished.
+[bookshelf](/books) - Look at my bookshelf to see what I'm currently reading have recently finished.
 
 [writing](/blog) - I hope to post longer form writing on here soon.
 
