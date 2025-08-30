@@ -96,8 +96,6 @@ function parse_image_item(item)
     return nil
 end
 
-local counter = 0
-
 function create_image_item(image_data, base_path)
     local image_elem = pandoc.Image("", base_path .. image_data.image, "")
     local dimensions = get_image_dimensions("assets/images/" .. image_data.image)
@@ -107,7 +105,6 @@ function create_image_item(image_data, base_path)
     end
 
     if image_data.description then
-        image_elem.attributes.tabindex = "0"
         return pandoc.Div({
             pandoc.Div({
                 image_elem,
