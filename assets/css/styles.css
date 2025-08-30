@@ -8,7 +8,7 @@
 }
 
 html {
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: "DejaVu Sans Mono", monospace;
     max-width: 80ch;
     margin: 0 auto;
     background: #f5f5f2;
@@ -53,12 +53,8 @@ p {
 
 .title {
     text-decoration: none;
-    font-family: "IBM Plex Mono", monospace;
 }
 
-.navigation {
-    font-family: "IBM Plex Mono", monospace;
-}
 
 a {
     color: black;
@@ -72,7 +68,6 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "IBM Plex Mono", monospace;
     font-weight: bold;
     text-transform: uppercase;
     margin-top: 4ch;
