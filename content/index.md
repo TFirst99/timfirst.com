@@ -14,11 +14,11 @@ In my free time, I enjoy running, reading, and cooking.
 
 [notes](/notes) - I collect links and ideas on this page throughout the month.
 
-[bookshelf](/books) - Look at my bookshelf to see what I'm currently reading have recently finished.
+[bookshelf](/books) - see what I'm currently reading or have recently finished.
 
 [writing](/blog) - I hope to post longer form writing on here soon.
 
-[rss](/rss.xml) - subscribe to my rss feed to see my notes at the end of each month, and my writing whenever I post.
+[rss](/rss.xml) - subscribe to my rss feed for a monthly digest of my writing.
 
 ## CONTACT
 
