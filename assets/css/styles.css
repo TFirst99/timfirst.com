@@ -185,6 +185,7 @@ img {
     opacity: 1;
 }
 
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 800px) {
     * {
@@ -196,11 +197,6 @@ img {
         font-size: 16px;
     }
 
-    /* Keep navigation width proportional since title text stays 16px */
-    div[style*="width: 23ch"] {
-        width: 221.567px !important;
-        text-align-last: justify !important;
-    }
 
     .image-grid {
         grid-template-columns: repeat(min(var(--grid-columns, 4), 2), 1fr);
