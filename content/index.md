@@ -2,7 +2,7 @@
 
 ---
 
-I am 23 year old econ predoc. I am interested in economics, artificial intelligence, epistemology, philosophy of science, philosophy of language, and more.
+I am 23 year old econ predoc. My interests include economics, epistemology, philosophy of language, artificial intelligence, philosophy of science, literature, architecture, and more.
 
 I work as a research professional at the University of California, San Diego; however, I live in Chicago, and work out of the University of Chicago. My research focuses on adolescent social media use and its impact on well-being and mental health.
 
