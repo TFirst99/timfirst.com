@@ -26,5 +26,5 @@ In my free time, I enjoy running, reading, and cooking.
 
 Please feel free to reach out to me. The best way to get in touch is email.
 
-email: [timothycfirst@gmail.com](mailto:timothycfirst@gmail.com) \
-github: [tfirst99](https://github.com/TFirst99)
+email - [timothycfirst@gmail.com](mailto:timothycfirst@gmail.com) \
+github - [github.com/tfirst99](https://github.com/TFirst99)
