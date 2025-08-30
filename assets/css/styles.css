@@ -191,6 +191,29 @@ img {
     opacity: 1;
 }
 
+/* ===== CLICK TOGGLE ===== */
+.toggle {
+    display: none;
+}
+
+.toggle-label {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.toggle:checked + .image-cover .image-overlay {
+    opacity: 1;
+}
+
+.toggle:checked + .image-cover img {
+    filter: blur(3px);
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 800px) {
     .image-grid {

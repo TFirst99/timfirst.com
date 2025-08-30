@@ -96,11 +96,10 @@ function parse_image_item(item)
     return nil
 end
 
-function create_image_item(image_data, base_path)
-    -- Create HTML structure for a single image item
-    local image_elem = pandoc.Image("", base_path .. image_data.image, "")
+local counter = 0
 
-    -- Get image dimensions to prevent layout shift
+function create_image_item(image_data, base_path)
+    local image_elem = pandoc.Image("", base_path .. image_data.image, "")
     local dimensions = get_image_dimensions("assets/images/" .. image_data.image)
     if dimensions then
         image_elem.attributes.width = tostring(dimensions.width)
@@ -108,9 +107,12 @@ function create_image_item(image_data, base_path)
     end
 
     if image_data.description then
-        -- Interactive overlay structure for hoverable images with description
+        counter = counter + 1
+        local toggle_id = "toggle-" .. counter
         return pandoc.Div({
+            pandoc.RawInline("html", '<input type="checkbox" id="' .. toggle_id .. '" class="toggle" />'),
             pandoc.Div({
+                pandoc.RawInline("html", '<label for="' .. toggle_id .. '" class="toggle-label"></label>'),
                 image_elem,
                 pandoc.Div({
                     pandoc.Div({ 
@@ -119,11 +121,7 @@ function create_image_item(image_data, base_path)
                 }, { class = "image-overlay" })
             }, { class = "image-cover" })
         }, { class = "image-item" })
-        
     else
-        -- Simple image with no description
-        return pandoc.Div({
-            image_elem
-        }, { class = "image-item" })
+        return pandoc.Div({ image_elem }, { class = "image-item" })
     end
 end
