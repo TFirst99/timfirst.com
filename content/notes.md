@@ -1,3 +1,11 @@
+## September 2025
+
+---
+
+1. [The Nokia N9 Alarm Clock.](https://nition.momentstudio.co.nz/2014/08/the-nokia-n9-alarm-clock/) It's fascinating to see how much our digital design language has changed over the last decade.
+
+2. [People celebrate the cancellation of a wind farm near a Japanese American internment camp.](https://www.seattletimes.com/seattle-news/wa-survivors-of-minidoka-reckon-with-uneasy-victory-in-trump-order/) However, the nearest wind turbine was going to be 9 miles away ([map](https://images.seattletimes.com/wp-content/uploads/2025/08/Minidoka-MagicValleyPowerProject-D.jpg)). Should the families of 9/11 victims fight for the cessation of all construction in Manhattan? There's a reasonable compromise to be had, and 9 miles was reasonable.
+
 ## August 2025
 
 ---
