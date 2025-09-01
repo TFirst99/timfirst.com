@@ -155,7 +155,7 @@ def generate_rss(entries, output_path):
 
 def main():
     """Main function to generate RSS feed."""
-    notes_file = "content/pages/notes.md"
+    notes_file = "content/notes.md"
     output_file = "output/rss.xml"
 
     try:
