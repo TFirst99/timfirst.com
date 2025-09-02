@@ -2,15 +2,16 @@
 """
 RSS Feed Generator for Tim First's Website
 
-Generates RSS feeds from markdown notes by looking for monthly headers
-and matching them with git commit dates. Only entries with matching
-git commits are included in the RSS feed.
+Generates RSS feeds from markdown notes by looking for monthly headers.
+Includes all month sections except the first/newest one (current active month).
+When a new month header is added, the previous month becomes available in RSS.
 """
 
 import re
 import datetime
 import subprocess
 import xml.etree.ElementTree as ET
+import calendar
 
 
 def markdown_to_html(text):
@@ -35,38 +36,48 @@ def markdown_to_html(text):
         return text
 
 
-def get_git_commit_date(file_path, month_str):
-    """Get the commit date when a commit message contains the month string.
-
+def get_next_month_date(month_str):
+    """Get publication date as 8am EST on the first day of the month AFTER the given month.
+    
     Args:
-        file_path: Path to the file to search commits for
-        month_str: String to search for in commit messages (e.g., "August 2025")
-
+        month_str: Header string like "August 2025"
+        
     Returns:
-        ISO formatted date string of the most recent matching commit, or None
+        ISO formatted date string for 8am EST on the first day of the following month
     """
     try:
-        result = subprocess.run([
-            'git', 'log', '--format=%ai', '--grep=' + month_str,
-            '--', file_path
-        ], capture_output=True, text=True, cwd='.')
-
-        if result.stdout.strip():
-            return result.stdout.strip().split('\n')[0]
-
-        return None
-    except subprocess.SubprocessError:
-        return None
+        # Parse "Month YYYY" format
+        month_name, year_str = month_str.strip().split()
+        year = int(year_str)
+        month_num = list(calendar.month_name).index(month_name)
+        
+        # Calculate next month
+        if month_num == 12:  # December -> January next year
+            next_month = 1
+            next_year = year + 1
+        else:
+            next_month = month_num + 1
+            next_year = year
+            
+        # Create datetime for 8am EST (13:00 UTC) on first day of next month
+        pub_date = datetime.datetime(next_year, next_month, 1, 13, 0, 0)
+        return pub_date.isoformat() + 'Z'
+    except (ValueError, IndexError):
+        # Fallback to current date if parsing fails
+        return datetime.datetime.now().isoformat() + 'Z'
 
 
 def parse_notes_file(file_path):
     """Parse markdown notes file and extract monthly entries.
+    
+    Includes all month sections except the first one (current/active month).
+    This allows RSS entries to be published when a new month header is added.
 
     Args:
         file_path: Path to the notes markdown file
 
     Returns:
-        List of entry dictionaries with month, content, and git_date
+        List of entry dictionaries with month, content, and pub_date
     """
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
@@ -80,24 +91,23 @@ def parse_notes_file(file_path):
 
     entries = []
 
-    # Process sections in pairs (header, content)
-    for i in range(1, len(sections), 2):
+    # Process sections in pairs (header, content), skipping the first section (current month)
+    for i in range(3, len(sections), 2):  # Start from index 3 to skip first month section
         if i + 1 < len(sections):
             month_str = sections[i].strip()
             entry_content = sections[i + 1].strip()
 
             if entry_content:  # Only include non-empty entries
-                git_date = get_git_commit_date(file_path, month_str)
+                pub_date = get_next_month_date(month_str)
+                
+                entries.append({
+                    'month': month_str,
+                    'content': entry_content,
+                    'pub_date': pub_date
+                })
 
-                if git_date is not None:
-                    entries.append({
-                        'month': month_str,
-                        'content': entry_content,
-                        'git_date': git_date
-                    })
-
-    # Sort by git commit date (newest first)
-    entries.sort(key=lambda x: x['git_date'], reverse=True)
+    # Sort by publication date (newest first)
+    entries.sort(key=lambda x: x['pub_date'], reverse=True)
     return entries
 
 
@@ -134,9 +144,9 @@ def generate_rss(entries, output_path):
     for entry in entries:
         item = ET.SubElement(channel, 'item')
 
-        # Parse git commit date and convert to RFC 2822 format
-        git_datetime = datetime.datetime.fromisoformat(entry['git_date'].replace('Z', '+00:00'))
-        pub_date = git_datetime.strftime('%a, %d %b %Y %H:%M:%S GMT')
+        # Parse publication date and convert to RFC 2822 format
+        pub_datetime = datetime.datetime.fromisoformat(entry['pub_date'].replace('Z', '+00:00'))
+        pub_date = pub_datetime.strftime('%a, %d %b %Y %H:%M:%S GMT')
 
         # Create URL-safe anchor from month string
         anchor = entry['month'].lower().replace(' ', '-')
