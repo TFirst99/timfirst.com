@@ -14,6 +14,8 @@
 
 6. [I Miss Using Em-Dashes.](https://bassi.li/articles/i-miss-using-em-dashes) This article raises a great point about the soft power that LLMs can have over writing that they never touch.
 
+7. [This magazine's website is powered by a solar panel.](https://solar.lowtechmagazine.com/power/) It sometimes goes offline. [They estimate](https://solar.lowtechmagazine.com/2025/03/the-compressed-book-edition/) that it is more energy efficient than printing a book with the same content.
+
 ## August 2025
 
 ---
