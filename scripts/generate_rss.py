@@ -98,13 +98,17 @@ def parse_notes_file(file_path):
             entry_content = sections[i + 1].strip()
 
             if entry_content:  # Only include non-empty entries
-                pub_date = get_next_month_date(month_str)
+                # Remove leading horizontal rules (---) from content
+                cleaned_content = re.sub(r'^---\s*\n?', '', entry_content, flags=re.MULTILINE).strip()
                 
-                entries.append({
-                    'month': month_str,
-                    'content': entry_content,
-                    'pub_date': pub_date
-                })
+                if cleaned_content:  # Only include if still has content after cleaning
+                    pub_date = get_next_month_date(month_str)
+                    
+                    entries.append({
+                        'month': month_str,
+                        'content': cleaned_content,
+                        'pub_date': pub_date
+                    })
 
     # Sort by publication date (newest first)
     entries.sort(key=lambda x: x['pub_date'], reverse=True)
