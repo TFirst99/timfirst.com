@@ -12,6 +12,8 @@
 
 5. [Don't build multi-agents.](https://cognition.ai/blog/dont-build-multi-agents#a-theory-of-building-long-running-agents) Multi-agents are an attractive proposition because they appear to mimic how groups of people work to complete complex tasks. However, they currently lack most of the tools that allow humans to effectively coordinate. It's unclear if this is a tooling issue, or a fundamental limitation of current models.
 
+6. [I Miss Using Em-Dashes.](https://bassi.li/articles/i-miss-using-em-dashes) This article raises a great point about the soft power that LLMs can have over writing that they never touch.
+
 ## August 2025
 
 ---
