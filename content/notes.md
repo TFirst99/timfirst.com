@@ -8,6 +8,8 @@
 
 3. [The day Return became Enter.](https://aresluna.org/the-day-return-became-enter/)
 
+4. [Shift-Shift](https://newsletter.shifthappens.site/archive/shift-shift/)
+
 ## August 2025
 
 ---
