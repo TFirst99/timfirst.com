@@ -6,6 +6,8 @@
 
 2. [People celebrate the cancellation of a wind farm near a Japanese American internment camp.](https://www.seattletimes.com/seattle-news/wa-survivors-of-minidoka-reckon-with-uneasy-victory-in-trump-order/) However, the nearest wind turbine was going to be 9 miles away ([map](https://images.seattletimes.com/wp-content/uploads/2025/08/Minidoka-MagicValleyPowerProject-D.jpg)). Should the families of 9/11 victims fight for the cessation of all construction in Manhattan? There's a reasonable compromise to be had, and 9 miles was reasonable.
 
+3. [The day Return became Enter.](https://aresluna.org/the-day-return-became-enter/)
+
 ## August 2025
 
 ---
