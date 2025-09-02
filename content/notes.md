@@ -8,7 +8,9 @@
 
 3. [The day Return became Enter.](https://aresluna.org/the-day-return-became-enter/)
 
-4. [Shift-Shift](https://newsletter.shifthappens.site/archive/shift-shift/)
+4. [Shift-Shift.](https://newsletter.shifthappens.site/archive/shift-shift/)
+
+5. [Don't build multi-agents.](https://cognition.ai/blog/dont-build-multi-agents#a-theory-of-building-long-running-agents) Multi-agents are an attractive proposition because they appear to mimic how groups of people work to complete complex tasks. However, they currently lack most of the tools that allow humans to effectively coordinate. It's unclear if this is a tooling issue, or a fundamental limitation of current models.
 
 ## August 2025
 
