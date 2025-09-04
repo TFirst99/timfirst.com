@@ -20,6 +20,8 @@
 
 9. [The story of iphone.fiveforty.net](https://fabiensanglard.net/iSummer/)
 
+10. [Scott Sumner's Final EconLog Post.](https://www.econlib.org/sumner-final-econlog-post) He is still blogging on [his substack](https://scottsumner.substack.com/).
+
 ## August 2025
 
 ---
