@@ -18,6 +18,8 @@
 
 8. [Where are the trillion-dollar biotech companies?](https://www.ladanuzhna.xyz/writing/trillion-dollar-biotechs) I think most people would be suprised by how little money biotech companies make. [Return on investment is often significantly below the cost of capital](https://fullratio.com/roic-by-industry), and they often trade below their cash balances.
 
+9. [The story of iphone.fiveforty.net](https://fabiensanglard.net/iSummer/)
+
 ## August 2025
 
 ---
