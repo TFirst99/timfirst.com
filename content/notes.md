@@ -16,6 +16,8 @@
 
 7. [This magazine's website is powered by a solar panel.](https://solar.lowtechmagazine.com/power/) It sometimes goes offline. [They estimate](https://solar.lowtechmagazine.com/2025/03/the-compressed-book-edition/) that it is more energy efficient than printing a book with the same content.
 
+8. [Where are the trillion-dollar biotech companies?](https://www.ladanuzhna.xyz/writing/trillion-dollar-biotechs) I think most people would be suprised by how little money biotech companies make. [Return on investment is often significantly below the cost of capital](https://fullratio.com/roic-by-industry), and they often trade below their cash balances.
+
 ## August 2025
 
 ---
