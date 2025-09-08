@@ -2,29 +2,25 @@
 
 ---
 
-I am 23 year old econ predoc. My interests include economics, epistemology, philosophy of language, artificial intelligence, philosophy of science, literature, architecture, and more.
+23 year old econ predoc at UCSD, located at the University of Chicago. My research focuses on adolescent social media use and its impact on well-being and mental health.
 
-I work as a research professional at the University of California, San Diego; however, I live in Chicago, and work out of the University of Chicago. My research focuses on adolescent social media use and its impact on well-being and mental health.
-
-In my free time, I enjoy running, reading, and cooking.
+In my free time, I enjoy running, reading, and cooking. Interested in economics, philosophy of language, statistics, philosophy of science, AI, design.
 
 # Content
 
 ---
 
-[notes](/notes) - I collect links and ideas on this page throughout the month.
+[notes](/notes) - links & ideas
 
-[bookshelf](/books) - see what I'm currently reading or have recently finished.
+[bookshelf](/books) - my bookshelf
 
-[writing](/blog) - I hope to post longer form writing on here soon.
+[writing](/blog) - coming soon
 
-[rss](/rss.xml) - subscribe to my rss feed for a monthly digest of my writing.
+[rss](/rss.xml) - rss feed
 
 ## CONTACT
 
 ---
-
-Please feel free to reach out to me. The best way to get in touch is email.
 
 email - [timothycfirst@gmail.com](mailto:timothycfirst@gmail.com) \
 github - [github.com/tfirst99](https://github.com/TFirst99)
