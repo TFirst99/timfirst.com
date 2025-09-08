@@ -2,25 +2,17 @@
 
 ---
 
-1. [The Nokia N9 Alarm Clock.](https://nition.momentstudio.co.nz/2014/08/the-nokia-n9-alarm-clock/) It's fascinating to see how much our digital design language has changed over the last decade.
+1. [The Nokia N9 Alarm Clock.](https://nition.momentstudio.co.nz/2014/08/the-nokia-n9-alarm-clock/) Great design can deliver nice aesthetics while also making things easier to use.
 
 2. [People celebrate the cancellation of a wind farm near a Japanese American internment camp.](https://www.seattletimes.com/seattle-news/wa-survivors-of-minidoka-reckon-with-uneasy-victory-in-trump-order/) However, the nearest wind turbine was going to be 9 miles away ([map](https://images.seattletimes.com/wp-content/uploads/2025/08/Minidoka-MagicValleyPowerProject-D.jpg)). Should the families of 9/11 victims fight for the cessation of all construction in Manhattan? There's a reasonable compromise to be had, and 9 miles was reasonable.
 
-3. [The day Return became Enter.](https://aresluna.org/the-day-return-became-enter/)
+3. [Don't build multi-agents.](https://cognition.ai/blog/dont-build-multi-agents#a-theory-of-building-long-running-agents) Multi-agents are an attractive proposition because they appear to mimic how groups of people work to complete complex tasks. However, they currently lack most of the tools that allow humans to effectively coordinate. It's unclear if this is a tooling issue, or a fundamental limitation of current models.
 
-4. [Shift-Shift.](https://newsletter.shifthappens.site/archive/shift-shift/)
+4. [I Miss Using Em-Dashes.](https://bassi.li/articles/i-miss-using-em-dashes) This article raises a great point about the soft power that LLMs can have over writing that they never touch.
 
-5. [Don't build multi-agents.](https://cognition.ai/blog/dont-build-multi-agents#a-theory-of-building-long-running-agents) Multi-agents are an attractive proposition because they appear to mimic how groups of people work to complete complex tasks. However, they currently lack most of the tools that allow humans to effectively coordinate. It's unclear if this is a tooling issue, or a fundamental limitation of current models.
+5. [This magazine's website is powered by a solar panel.](https://solar.lowtechmagazine.com/power/) It sometimes goes offline. [They estimate](https://solar.lowtechmagazine.com/2025/03/the-compressed-book-edition/) that it is more energy efficient than printing a book with the same content.
 
-6. [I Miss Using Em-Dashes.](https://bassi.li/articles/i-miss-using-em-dashes) This article raises a great point about the soft power that LLMs can have over writing that they never touch.
-
-7. [This magazine's website is powered by a solar panel.](https://solar.lowtechmagazine.com/power/) It sometimes goes offline. [They estimate](https://solar.lowtechmagazine.com/2025/03/the-compressed-book-edition/) that it is more energy efficient than printing a book with the same content.
-
-8. [Where are the trillion-dollar biotech companies?](https://www.ladanuzhna.xyz/writing/trillion-dollar-biotechs) I think most people would be suprised by how little money biotech companies make. [Return on investment is often significantly below the cost of capital](https://fullratio.com/roic-by-industry), and they often trade below their cash balances.
-
-9. [The story of iphone.fiveforty.net](https://fabiensanglard.net/iSummer/)
-
-10. [Scott Sumner's Final EconLog Post.](https://www.econlib.org/sumner-final-econlog-post) He is still blogging on [his substack](https://scottsumner.substack.com/).
+6. [Where are the trillion-dollar biotech companies?](https://www.ladanuzhna.xyz/writing/trillion-dollar-biotechs) I think most people would be suprised by how little money biotech companies make. [Return on investment is often significantly below the cost of capital](https://fullratio.com/roic-by-industry), and they often trade below their cash balances.
 
 ## August 2025
 
