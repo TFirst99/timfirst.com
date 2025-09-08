@@ -3,9 +3,9 @@
 ---
 
 ::: image4
-- wordandobject.webp | A slow, somewhat difficult read. I'm not familiar enough with the rest of the literature to follow all the arguments, but this is one of my favorite pieces of philosophy so far.
-- patriot.webp | Navalny is a skilled communicator. He expresses a genuine patriotism for Russia, despite his criticisms.
-- themoneyillusion.webp | I love Scott Sumner's writing. I remain somewhat skeptical of his description of causality w.r.t. the 2008 financial crisis, but I am open to changing my mind.
+- wordandobject.webp | pg. 128 / 276
+- patriot.webp | pg. 279 / 479
+- themoneyillusion.webp | pg. 95 / 366
 :::
 
 \
@@ -20,10 +20,10 @@
 - gunsgermsandsteel.webp | Guns, Germs, and Steel is more maligned than it deserves. Like every book in its genre, it overstates its claims; regardless, it's informative and thought-provoking.
 - whynationsfail.webp | Yes, the econometrics are flawed. Yes, the theory struggles to explain the success of China and India. Yes, you should still read it.
 - weirdestpeople.webp | Should be read as a follow-up to Guns, Germs, and Steel and Why Nations Fail. Another attempt at explaining the success of some societies over others, this time with  focus on psychology.
-- cows.webp | I cannot recommend anyone read this book, but it is undeniably well written, and very hard to put down. Cows is undoubtedly one of the most disgusting books ever written.
+- cows.webp | One of the most disgusting books ever written. Well written.
 - beingandtime.webp | This book is terrible. The only reason to read it is the feeling of freedom it provides when you are finally done.
 - howelitesate.webp | A leftist's perspective on why leftist movements fail.
-- lolita.webp | I wish every book was as well written as Lolita. Nabakov writes so well that you willingly follow Humbert Humbert for 300 pages.
+- lolita.webp | It's a very good book.
 - howthewarwaswon.webp | This book is lauded for a reason. Even if you aren't a history buff, it's worth reading. Note that it is a contrarian account, and not a definitive history.
 - philosophicalinvestigations.webp | I wanted to enjoy this more than I did. The style is not conducive to rhetorical clarity. I still think it's worth reading if you are interested in language and meaning.
 - abundance.webp | At its best, a fascinating list of governmental failures despite good intentions. At it's worst, a blurry vision for a future that the current American left cannot reach with its current commitments.
