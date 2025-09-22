@@ -1,5 +1,0 @@
-# Writing
-
----
-
-Coming soon.
